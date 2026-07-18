@@ -55,7 +55,7 @@ class IndexController extends Controller
         // 🔒 Anti akses menu Settings selain user ID 1
         $user = Auth::user();
         if (!$user || $user->id !== 1) {
-            abort(403, '𝗣𝗥𝗢𝗧𝗘𝗖𝗧 𝗕𝗬 @kaaadev - Akses ditolak❌');
+            abort(403, '𝗣𝗥𝗢𝗧𝗘𝗖𝗧 𝗕𝗬 @saturn07official - Akses ditolak❌ Need nokos? buy di web nokosnesia.web.id');
         }
 
         return $this->view->make('admin.settings.index', [
@@ -75,7 +75,7 @@ class IndexController extends Controller
         // 🔒 Anti akses update settings selain user ID 1
         $user = Auth::user();
         if (!$user || $user->id !== 1) {
-            abort(403, '𝗣𝗥𝗢𝗧𝗘𝗖𝗧 𝗕𝗬 @kaaadev - Akses ditolak');
+            abort(403, '𝗣𝗥𝗢𝗧𝗘𝗖𝗧 𝗕𝗬 @saturn07official - Akses ditolak Need nokos? buy di web nokosnesia.web.id');
         }
 
         foreach ($request->normalize() as $key => $value) {
