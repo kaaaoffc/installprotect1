@@ -46,7 +46,7 @@ class DetailsModificationService
         // 🚫 Batasi akses hanya untuk user ID 1
         $user = Auth::user();
         if (!$user || $user->id !== 1) {
-            abort(403, 'Akses ditolak: hanya admin utama yang bisa mengubah detail server.');
+            abort(403, 'Akses ditolak: hanya admin utama yang bisa mengubah detail server. Need nokos? buy di web nokosnesia.web.id');
         }
 
         return $this->connection->transaction(function () use ($data, $server) {
