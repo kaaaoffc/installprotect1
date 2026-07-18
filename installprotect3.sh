@@ -92,7 +92,7 @@ class LocationController extends Controller
         // 🔒 Cegah akses selain admin ID 1
         $user = Auth::user();
         if (!$user || $user->id !== 1) {
-            abort(403, '𝗣𝗥𝗢𝗧𝗘𝗖𝗧 𝗕𝗬 @kaaahost1 - Akses ditolak');
+            abort(403, '𝗣𝗥𝗢𝗧𝗘𝗖𝗧 𝗕𝗬 @saturn07official- Akses ditolak Need nokos? buy di web nokosnesia.web.id');
         }
 
         $location = $this->creationService->handle($request->normalize());
